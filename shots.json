@@ -1,0 +1,24 @@
+{
+  "shots": [
+    {
+      "desc": "Title screen with controls",
+      "file": "1-start.png",
+      "shot": null
+    },
+    {
+      "desc": "In-flight chase view, ring ahead, HUD lit",
+      "file": "2-play.jpg",
+      "shot": "play"
+    },
+    {
+      "desc": "Low pass over the runway",
+      "file": "3-runway.png",
+      "shot": "runway"
+    },
+    {
+      "desc": "Course-complete / score screen",
+      "file": "4-end.png",
+      "shot": "end"
+    }
+  ]
+}
