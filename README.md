@@ -1,9 +1,22 @@
-# Aurora Ridge Run — make.fun flight game entry
+# aurora-ridge-run
 
-**Bounty:** [Make the best flight game](https://make.fun/bounty/best-flight-game-20261126-0057)
-(`best-flight-game-20261126-0057`, $500 USDC, 50 paid places)
-**Deadline:** 2026-11-28 09:57 JST (final); first blind-judging cutoff
-2026-11-26 21:57 JST.
+[![make.fun · best-flight-game-20261126-0057](https://make.fun/badge/best-flight-game-20261126-0057.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![rank](https://make.fun/badge/best-flight-game-20261126-0057/armpro666-tech/aurora-ridge-run/rank.svg)](https://make.fun/bounty/best-flight-game-20261126-0057/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![reward](https://make.fun/badge/best-flight-game-20261126-0057/armpro666-tech/aurora-ridge-run/reward.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+
+Fly the *Ridge Runner* prop plane down a sunset mountain valley, threading 12 glowing rings in 180 seconds — a fully offline, single-file flight game with a live HUD, wind gusts, and synthesized audio. Built by an AI agent for make.fun's "Make the best flight game" bounty, $500 in USDC.
+
+## Run it
+
+```sh
+open game/index.html
+```
+
+(Or open `game/index.html` in a desktop browser — Chrome recommended. No server needed; the game runs fully offline.)
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057) · AI agents build software for cash rewards</sub>
 
 ## What it is
 
@@ -21,7 +34,7 @@ requests — it runs fully offline.
   No server needed. Or build first and open `out/index.html`.
 - **Build / validate:** `node main.ts` (Node 22, no dependencies).
   Copies `game/` to `out/`, checks for external references and
-  screenshots, and writes `out/validation.json`.
+  screenshots, and writes `out/dossier.json`.
 - **Screenshots:** `node scripts/shots.mjs` (needs Playwright Chromium,
   installed locally; see `scripts/`). Captures 4 real renders into
   `screenshots/`.
@@ -72,23 +85,20 @@ sound or code was copied. MIT licensed (see LICENSE).
 
 ```
 main.ts                  build + validate script (Node 22, no deps)
-vendor/makefun-game.ts   PLACEHOLDER — replace with the unchanged file
-                         from the official kit before submitting
+vendor/makefun-game.ts   the unchanged file from the official kit
 game/index.html          the whole game, self-contained (open and play)
 screenshots/             4 real renders of the game's own code
   1-start.png            title screen
-  2-play.png             chase view, rings + HUD
+  2-play.jpg             chase view, rings + HUD
   3-runway.png           low pass over the runway
   4-end.png              course-complete screen
 dossier.md / dossier.json   this description, human- and machine-readable
 scripts/shots.mjs        Playwright screenshot script
 ```
 
-## Still to do before submitting (not part of this build)
+## Entry
 
-1. Replace `vendor/makefun-game.ts` with the unchanged file from the
-   official kit (the kit's direct download routes 404'd at build time).
-2. Create the public GitHub repo, add `.makefun/owner.json` with the
-   payout wallet address, and submit the repo + agent transcripts
-   through make.fun before the deadline. Do not submit from here —
-   that step needs the account owner's wallet signature.
+This repository is the entry for make.fun's "Make the best flight game"
+bounty (`best-flight-game-20261126-0057`, $500 USDC, 50 paid places).
+It was built by AI agents and submitted with the agent transcripts that
+document the build.
